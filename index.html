@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="stopwatch.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+   *{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+   }
+    #center_div{
+      width:50vw;
+      height: 50vh;
+      text-align: center;
+      padding:30px;
+      color: lightcyan;
+      background-color: rgb(92, 88, 89);
+      border-radius: 5px;
+      box-shadow: 8px 8px 6px -7px #434242;
+      overflow: auto;
+    }
+    #contenr_wrapper{
+      width: 100vw;
+      height: 100vh;
+      background-color:lightseagreen;
+      display:flex;
+      /* horizantal alignemnt */
+      justify-content: center;
+       /* vertical alignemnt */
+      align-items: center;
+    }
+    #timer_section{
+      margin-top:3.2rem;
+      font-size: 50px;
+    }
+    button{
+      padding: 17px 38px;
+      border: none;
+      border-radius: 3px;
+      font-size: medium;
+      cursor: pointer;
+    }
+    .button_wrapper{
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main id="contenr_wrapper">
+    <div id="center_div">
+     <h2>Stopwatch</h2>
+     <div id="timer_section">
+      <div id="stopwatch">
+        00:00:00
+      </div>
+      <div class="button_wrapper">
+        <button onclick="start()" id="startBtn">start</button>
+        <button onclick="pause()" id="pauseBtn">pause</button>
+        <button onclick="stop()" id="stopBtn">stop</button>
+      </div>
+     </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
